@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    こんにちは
+    <script>
+        function chg(){
+            var t = document.getElementById("txt");
+            t.value = "修改后的文本内容";
+        }
+    </script>
+    <input type="text" id="txt" value="初始文本内容">
+    <input type="button" value="更改文本内容" name="btn" onclick="chg()">
+    <script>
+        document.bgColor = "yellow";
+        document.fgColor = "orange";
+    </script>
+    <form action="" id="form1" name="myform" method="post">
+        用户名: <input type="text" name="username" id="" size="15"><br>
+        密码: <input type="password" name="password" maxlength="8" size="15"><br>
+        <input type="submit" name="sub1" value="登录">
+    </form>
+</body>
+</html>

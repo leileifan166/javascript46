@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>さるじり</title>
+</head>
+<body>
+    <div>
+        僕はdivタグです
+        <p><僕は段落です/p>
+    </div>
+    <h2>僕は見出しです</h2>
+    <a href="#">僕はリンクです</a>
+    <h4>僕は小さい見出しです</h4>
+    <script>
+        console.log(document);
+        console.log(document.html);//这个找不到
+        console.log(document.documentElement);
+        console.log(document.head);
+        console.log(document.body);
+        console.log(document.div);
+        console.log(document.h2);
+        console.log(document.a);
+        console.log(document.h4);
+        console.log(document.title);
+        document.title = "僕はさるじりですよ";
+        console.log(document.body.childNodes);
+        console.log(document.body.childNodes.length);
+        console.log(document.body.childNodes[0]);
+        console.log(document.body.childNodes[1]);
+        console.log(document.body.childNodes[2]);
+        var a = document.body.childNodes;
+        for(i = 0; i < document.body.childNodes.length; i++){
+            /* console.log(a[i].nodeType); */
+            console.log(a[i].nodeValue);
+        }
+
+
+        console.log(document.body.childNodes[1]);
+        console.log(document.body.childNodes[2]);
+        console.log(document.body.childNodes[3]);
+
+    </script>
+    
+</body>
+</html>

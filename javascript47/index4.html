@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1 {
+            width: 500px;
+            height: 100px;
+            border: 1px solid #000;
+        }
+    </style>
+
+</head>
+<body>
+    <button id="btn" onclick="addEle()">创建元素</button>
+    <div id="box1"></div>
+    <script>
+        var box1 = document.getElementById('box1');
+        function addEle(){
+
+            var newNode = document.createElement("h2");
+            var newTextNode = document.createTextNode('我是document创建的文本节点');
+            newNode.appendChild(newTextNode);
+            box1.appendChild(newNode);
+        }
+    </script>
+    
+
+    <script>
+        
+    </script>
+    
+</body>
+</html>
